@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "a minimalistic promise handler",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "tsc index.ts -d -t esnext"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/joaquinuriel/zuwarten/issues"
   },
-  "homepage": "https://github.com/joaquinuriel/zuwarten#readme"
+  "homepage": "https://github.com/joaquinuriel/zuwarten#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
 }
